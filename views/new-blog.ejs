@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <%- include('partials/header-with-profile.ejs') %>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Blog</title>
+    <link rel="stylesheet" href="/style/all.css">
+    <link rel="stylesheet" href="/style/pages/new-blog.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container-fluid-block">
+        <div class="container">
+            <div class="new-blog">
+                <h3>Новый блог</h3>
+                <form action="/api/blog/new" method="POST" class="form" enctype="multipart/form-data">
+                    <div class="blogCreationBlock">
+                        <input type="text" placeholder="Введите заголовок блога" name="blog_name">
+                        <select name="category">
+                            <% category.forEach(category => {%>
+                            <option><%=category.name%></option>
+                            <% })%>
+                        </select>
+                        <input type="file" class="btn-selectImage" name="image"></input>
+                        <textarea type="text" class="fieldForEnteringAdescription" placeholder="Введите описание блога" name="description"></textarea>
+                    </div>
+                    <button type="submit" class="create-btn">Создать</button>
+                </form>    
+            </div>
+        </div>
+    </div>
+</body>
+</html>

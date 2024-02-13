@@ -1,0 +1,90 @@
+body{
+    background-color: #F8F9FA !important;
+}
+
+.container-fluid-block{
+    padding: 40px 70px;
+    height: 2748px;
+}
+
+.container{
+    display: block;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 40px !important;
+    background-color: #FFFFFF;
+    box-shadow: 0px 2px 4px 0px #00000040;
+    box-sizing: border-box !important;
+    height: 2182px;
+}
+
+.new-blog h3{
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 46px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.blogCreationBlock{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 65%;
+    margin-bottom: 15px;
+}
+
+.blogCreationBlock textarea{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0em;
+    text-align: left;
+    border-radius: 4px;
+    border: 1px solid #E7E7E7;
+    height: 100px;
+    resize: none;
+}
+
+.blogCreationBlock select{
+    height: 50px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 46px;
+    letter-spacing: 0em;
+    text-align: left;
+    border-radius: 4px;
+    border: 1px solid #E7E7E7;
+    color: #0000008A;
+}
+
+.btn-selectImage{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 46px;
+    letter-spacing: 0em;
+    text-align: left;
+    border: none;
+    background-color: #FFF72F !important;
+    border-radius: 4px;
+    width: 245px !important;
+    height: 52px !important;
+}
+
+.create-btn{
+    width: 125px;
+    height: 50px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 46px;
+    letter-spacing: 0em;
+    text-align: center;
+    background-color: #00A2DC;
+    border-radius: 4px;
+    border: none;
+    color: #FFFFFF;
+}

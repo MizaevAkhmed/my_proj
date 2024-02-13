@@ -1,0 +1,92 @@
+<html lang="en">
+<head>
+    <%- include('partials/header.ejs')%>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog Page With Unauthorized User</title>
+    <link rel="stylesheet" href="/style/all.css">
+    <link rel="stylesheet" href="/style/pages/blogPageWithUnauthorizedUser.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container-fluid-block">
+        <div class="container">
+        <%
+            blogs.forEach(item => {
+        %>
+            <div class="article">
+                <div class="imageOfArticle">
+                    <img src="<%=item.image%>" alt="">
+                </div>
+                <div class="bottom-line">
+                    <div class="icon-block">
+                        <img src="/images/icons/date.svg" alt="">
+                        <h5>26.06.2020</h5>
+                    </div>
+                    <div class="icon-block">
+                        <img src="/images/icons/visibility.svg" alt="">
+                        <h5>21</h5>
+                    </div>
+                    <div class="icon-block">
+                        <img src="/images/icons/icon-message.svg" alt="">
+                        <h5>4</h5>
+                    </div>
+                    <div class="icon-block">
+                        <img src="/images/icons/Fill 6.svg" alt="">
+                        <h5 name="category"><%=item.category%></h5>
+                    </div>
+                    <div class="icon-block">
+                        <img src="/images/icons/person.svg" alt="">
+                        <h5 name="user"><%=item.author.full_name%></h5>
+                    </div>
+                </div>
+                <div class="sub-article">
+                    <div class="subtitle-name">
+                        <div class="subtitle" name="blog_name"><%=item.blog_name%></div>
+                        <div class="dropdown">
+                            <button class="dropbtn">
+                                <img src="/images/icons/Vector.svg" alt=""> Ещё</button>
+                            <div class="dropdown-content">
+                                <button onclick="editFunc()" class="edit-btn">Редактировать</button>
+                                <button onclick="deleteFunc()" class="delete-btn">Удалить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <h5 name="description"><%=item.description%></h5>
+                </div>
+            </div>
+        <%
+            })
+        %>
+            <div class="comments">
+                <h3>2 комментария</h3>
+                <div class="user-comment">
+                    <div class="avatarUser">
+                        <img src="/images/my blogs photos/avatar.png" alt="">
+                        <h4><%=user.full_name%></h4>
+                    </div>
+                    <h5>В отличие от обычных виджетов пользовательского интерфейса JavaScript, комплексные виджеты <br>
+                            - это полноценные приложения, которые не требуют дополнительной настройки и кастомизации.
+                    </h5>
+                </div>
+                <div class="registerOrLogInToYourAccount">
+                    <h5>Чтобы оставить комментарий <a href="account-registration">зарегистрируйтесь</a>, или <a href="login-to-account">войдите</a> в аккаунт.</h5>
+                </div>
+            </div>
+        </div>
+        <div class="container-block-category">
+            <h2>Категории</h2>
+            <ul>Прогнозы в IT</ul>
+            <ul>Веб-разработка</ul>
+            <ul>Мобильная разработка</ul>
+            <ul>Фриланс</ul>
+            <ul>Алгоритмы</ul>
+            <ul>Тестирование IT систем</ul>
+            <ul>Разработка игр</ul>
+            <ul>Дизайн и юзабилити</ul>
+            <ul>Искуственный интелект</ul>
+            <ul>Машинное обучение</ul>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,7 @@
+.avatar-photo{
+    width: 72px;
+}
+
+.avatar-photo img{
+    width: 100% !important;
+}

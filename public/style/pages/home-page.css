@@ -1,0 +1,116 @@
+body{
+    background-color: #F8F9FA !important;
+}
+
+.container-fluid-block{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px;
+    height: 2748px;
+    gap: 30px;
+}
+
+.container{
+    margin: 0 !important;
+    padding: 30px 60px 0px 60px !important;
+    background-color: #FFFFFF;
+    box-shadow: 0px 2px 4px 0px #00000040;
+    box-sizing: border-box !important;
+    min-height: 2182px;
+}
+
+.title h2{
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 46px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.title h5{
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.imageOfArticle{
+    display: flex;
+    justify-content: center;
+    margin: 40px 0px 40px 0px;
+}
+
+.imageOfArticle img{
+    width: 100%;
+}
+
+.sub-article a{
+    display: block;
+    font-family: Roboto;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-decoration: none;
+    color: #000000;
+    margin-bottom: 25px;
+}
+
+.sub-article h5{
+    margin: 0px ;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.bottom-line{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.icon-block{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.icon-block h5{
+    margin: 0;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0em;
+}
+
+.container-block-category{
+    width: 313px;
+    padding: 40px 30px 0px 30px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 2px 4px 0px #00000040;
+    box-sizing: border-box !important;
+}
+
+.container-block-category h2{
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 46px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.container-block-category ul{
+    padding: 0;
+    border-bottom: 1px solid #E7E7E7;
+}
